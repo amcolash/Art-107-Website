@@ -1,4 +1,4 @@
 art107
 ======
 
-Art 107 website project
+Website for my Art 107 Project

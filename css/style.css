@@ -1,0 +1,11 @@
+body {
+  background-image: url("../img/footer_lodyas.png");
+}
+
+.container {
+  background-color: #eeeeee;
+  margin-top: 50px;
+  margin-top: 80px;
+  padding: 30px;
+  border-radius: 25px;
+}
