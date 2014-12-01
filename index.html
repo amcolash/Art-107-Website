@@ -7,38 +7,57 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/superslides.css">
 </head>
 
 <body>
 
-  <header>
-    <h1 class="text-center">Anderson Volkov</h1>
-  </header>
-
-  <nav class="text-center">
-    <ul class="nav nav-pills">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="podcast.html">Podcast</a></li>
-      <li><a href="#">More</a></li>
-      <li><a href="#">Fun</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <div class="col-xs-12">
-      <h2>Title Here</h2>
-
-    <div class="col-xs-12">
-      <footer>
-        <hr/>
-        Anderson Volkov, 2014
-      </footer>
+  <div id="slides">
+    <div class="slides-container">
+      <img src="img/slides/bcg_slide-1.jpg" width="10800" height="2332"/>
+      <img src="img/slides/bcg_slide-4.jpg" width="2448" height="2448"/>
     </div>
+<!--
+    <nav class="slides-navigation">
+      <a href="#" class="next">Next</a>
+      <a href="#" class="prev">Previous</a>
+    </nav>
+  -->
   </div>
 
-  <script src="js/jquery-1.11.1.min.js"></script>
+  <div class="floating">
+    <header>
+      <h1>Anderson Volkov</h1>
+      <h3>Professional Biker</h3>
+    </header>
+    
+    <nav class="text-center">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="#">More</a></li>
+        <li><a href="#">Fun</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.animate-enhanced.min.js"></script>
+  <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true,
+        play: 7000
+      });
+    });
+  </script>
 
 </body>
 </html>

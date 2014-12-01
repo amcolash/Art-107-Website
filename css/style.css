@@ -15,7 +15,7 @@ header {
 header h1 {
   color: #ddd;
   margin: 0 auto;
-  padding: 16px;
+  padding: 16px; 
 }
 
 nav {
@@ -54,3 +54,31 @@ footer {
 }
 
 /* End base page styling */
+
+.floating {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 9999;
+}
+
+.floating nav {
+  margin-bottom: auto;
+}
+
+.floating header h3 {
+  color: #ddd;
+  margin: 0 auto;
+  padding: 0 16px 8px 16px; 
+}
+
+.floating header, .floating nav {
+  background: rgba(0, 0, 0, 0.75);
+  margin: 20px 10px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+#slides nav {
+  background-color: rgba(255, 255, 255, 0.3);
+}
