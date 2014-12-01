@@ -1,47 +1,56 @@
-.entry-header .inner {
-    text-align: center;
-    margin: 0 auto 20px auto;
-    width: 800px;
-    color: #ccc;
+/* Base page styling */
+
+hr {
+  border-top: 1px solid #bbb;
 }
 
-.entry-header {
-    padding-top: 20px;
-    background-color: #333;
-    width:100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999999;
+body {
+  background-image: url("../img/footer_lodyas.png");
 }
 
-.padding-top {
-  padding-top: 50px;
+header {
+  background-color: rgba(35, 35, 35, 0.25);
 }
 
-#faceHead {
-  margin-top: 50px;
-  border-radius: 100%;
-  height: 250px;
+header h1 {
+  color: #ddd;
+  margin: 0 auto;
+  padding: 16px;
 }
 
-#slide-1 .content {
-  max-width: 550px;
-  margin: auto;
-  position: relative;
+nav {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-#slide-1 #color {
-  -webkit-filter: blur(50px); 
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 100px;
- 
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-height: 350px;
-  max-width: 550px;
+nav ul {
+  display: inline-block;
 }
+
+nav a {
+  color: #ddd;
+}
+
+.container {
+  background: #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 15px;
+  }
+}
+
+footer {
+  text-align: right;
+}
+
+/* End base page styling */
