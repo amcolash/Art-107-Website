@@ -94,8 +94,15 @@ footer {
   text-shadow: 0px 0px 10px rgba(255,255,255,1);
   padding: 0 10px;
 }
+
+.slides-navigation a:hover {
+  color: #4ac;
+  text-decoration: none;
+}
 /* End Main Page Styling */
 
+/* Product Review Styling */
 #reviews img {
   padding: 20px;
 }
+/* End Product Review Styling */
