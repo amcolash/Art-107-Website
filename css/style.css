@@ -1,5 +1,4 @@
 /* Base page styling */
-
 hr {
   border-top: 1px solid #bbb;
 }
@@ -12,8 +11,11 @@ header {
   background-color: rgba(35, 35, 35, 0.25);
 }
 
+header h1, header h3 {
+  color: #eee;
+}
+
 header h1 {
-  color: #ddd;
   margin: 0 auto;
   padding: 16px; 
 }
@@ -32,6 +34,7 @@ nav ul {
 
 nav a {
   color: #ddd;
+  margin: 4px;
 }
 
 .container {
@@ -53,8 +56,8 @@ nav a {
 footer {
   text-align: right;
 }
-
 /* End base page styling */
+
 
 /* Main page styling */
 .floating {
@@ -69,9 +72,8 @@ footer {
 }
 
 .floating header h3 {
-  color: #ddd;
   margin: 0 auto;
-  padding: 0 16px 8px 16px; 
+  padding: 0 16px 16px 16px; 
 }
 
 .floating header, .floating nav {
@@ -79,6 +81,26 @@ footer {
   margin: 20px 10px;
   padding: 15px;
   border-radius: 7px;
+}
+
+.caption {
+  color: #ddd;
+  position: absolute;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.caption.hidden-xs {
+  font-size: 62px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,1);
+  bottom: 125px;
+  right: 65px;
+}
+
+.caption.visible-xs {
+  font-size: 46px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,1);
+  bottom: 95px;
+  right: 25px;
 }
 
 .slides-pagination {
@@ -101,8 +123,28 @@ footer {
 }
 /* End Main Page Styling */
 
+
 /* Product Review Styling */
 #reviews img {
   padding: 20px;
 }
 /* End Product Review Styling */
+
+
+/* Responsive YouTube Embed */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* End Responsive YouTube Embed */
