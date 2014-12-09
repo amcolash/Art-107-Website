@@ -15,17 +15,16 @@ header h1, header h3 {
   color: #eee;
 }
 
-header h1 {
-  margin: 0 auto;
-  padding: 16px; 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 18px;
+  }
 }
 
 nav {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 25px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  margin-bottom: 15px;
 }
 
 nav ul {
@@ -55,6 +54,10 @@ nav a {
 
 footer {
   text-align: right;
+}
+
+.round {
+  border-radius: 50%;
 }
 /* End base page styling */
 
@@ -148,3 +151,11 @@ footer {
     height: 100%;
 }
 /* End Responsive YouTube Embed */
+
+/* About Me Styling */
+
+#face {
+  max-height: 325px;
+}
+
+/* End About Me Styling */
